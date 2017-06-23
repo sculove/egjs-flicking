@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: Flicking | eg.Flicking - API</title>
+    <title>Class: Flicking | egjs::Flicking - API</title>
     
     <meta name="description" content="A module used to implement flicking interactions. With this module, you can make flicking gestures, which are ways to navigate left and right to move between panels arranged side by side." />
     
@@ -32,7 +32,7 @@
     
     
     <script>
-    var config = {"monospaceLinks":true,"cleverLinks":true,"default":{"outputSourceFiles":true},"applicationName":"eg.Flicking","disqus":"egjs","googleAnalytics":"","openGraph":{"title":"","type":"website","image":"","site_name":"","url":""},"meta":{"title":"eg.Flicking - API","description":"A module used to implement flicking interactions. With this module, you can make flicking gestures, which are ways to navigate left and right to move between panels arranged side by side.","keyword":"UI Component, egjs, flicking, carousel"},"linenums":true,"link":{"canonical":"http://naver.github.io/egjs/latest/doc/eg.Flicking.html"}};
+    var config = {"monospaceLinks":true,"cleverLinks":true,"default":{"outputSourceFiles":true},"applicationName":"eg.Flicking","disqus":"egjs","googleAnalytics":"","openGraph":{"title":"","type":"website","image":"","site_name":"","url":""},"meta":{"title":"egjs::Flicking - API","description":"A module used to implement flicking interactions. With this module, you can make flicking gestures, which are ways to navigate left and right to move between panels arranged side by side.","keyword":"UI Component, egjs, flicking, carousel"},"linenums":true,"link":{"canonical":"http://naver.github.io/egjs/latest/doc/eg.Flicking.html"}};
     </script>
     
 
@@ -50,6 +50,9 @@
     <ul class="list">
     
         <!-- Non Grouping Version -->
+        
+            
+
         
             
 
@@ -90,17 +93,29 @@
     
         <li data-name="eg.Flicking#getTotalCount"><a href="eg.Flicking.html#getTotalCount">getTotalCount</a></li>
     
+        <li data-name="eg.Flicking#hasOn"><a href="eg.Flicking.html#hasOn">hasOn</a> <img src="img/i.png" width="14" title="inherited" alt="inherited"></li>
+    
         <li data-name="eg.Flicking#isPlaying"><a href="eg.Flicking.html#isPlaying">isPlaying</a></li>
     
         <li data-name="eg.Flicking#moveTo"><a href="eg.Flicking.html#moveTo">moveTo</a></li>
     
         <li data-name="eg.Flicking#next"><a href="eg.Flicking.html#next">next</a></li>
     
+        <li data-name="eg.Flicking#off"><a href="eg.Flicking.html#off">off</a> <img src="img/i.png" width="14" title="inherited" alt="inherited"></li>
+    
+        <li data-name="eg.Flicking#on"><a href="eg.Flicking.html#on">on</a> <img src="img/i.png" width="14" title="inherited" alt="inherited"></li>
+    
+        <li data-name="eg.Flicking#once"><a href="eg.Flicking.html#once">once</a> <img src="img/i.png" width="14" title="inherited" alt="inherited"></li>
+    
+        <li data-name="eg.Flicking#option"><a href="eg.Flicking.html#option">option</a> <img src="img/i.png" width="14" title="inherited" alt="inherited"></li>
+    
         <li data-name="eg.Flicking#prev"><a href="eg.Flicking.html#prev">prev</a></li>
     
         <li data-name="eg.Flicking#resize"><a href="eg.Flicking.html#resize">resize</a></li>
     
         <li data-name="eg.Flicking#restore"><a href="eg.Flicking.html#restore">restore</a></li>
+    
+        <li data-name="eg.Flicking#trigger"><a href="eg.Flicking.html#trigger">trigger</a> <img src="img/i.png" width="14" title="inherited" alt="inherited"></li>
     
     </ul>
     <ul class="events itemMembers expends">
@@ -163,7 +178,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line64">line 64</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line21">line 21</a>
         </div>
         
     </div>
@@ -796,15 +811,6 @@
     
     
     
-        <h5>Example</h5>
-        
-
-    
-    <pre class="prettyprint"><code><!-- HTML -->
-<p> <div id="mflick"><br> <div><br> <p>Layer 0</p><br> </div><br> <div><br> <p>Layer 1</p><br> </div><br> <div><br> <p>Layer 2</p><br> </div><br> </div><br> <script><br> var some = new eg.Flicking(&quot;#mflick&quot;, {<br>                circular : true,<br>                threshold : 50<br>            }).on({<br>                beforeRestore : function(e) { ... },<br>                flickStart : function(e) { ... }<br>            });<br> </script></p></code></pre>
-    
-
-    
 
     
 <dl class="details">
@@ -827,34 +833,10 @@
     
 
     
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li>Easing Functions Cheat Sheet <a href="http://easings.net/">http://easings.net/</a></li>
-        
-            <li>If you want to try a different easing function, use the jQuery easing plugin (<a href="http://gsgd.co.uk/sandbox/jquery/easing">http://gsgd.co.uk/sandbox/jquery/easing</a>) or the jQuery UI easing library (<a href="https://jqueryui.com/easing">https://jqueryui.com/easing</a>). <ko>다른 easing 함수를 사용하려면 jQuery easing 플러그인(<a href="http://gsgd.co.uk/sandbox/jquery/easing">http://gsgd.co.uk/sandbox/jquery/easing</a>)이나, jQuery UI easing 라이브러리(<a href="https://jqueryui.com/easing">https://jqueryui.com/easing</a>)를 사용한다</ko></li>
-        </ul>
-    </dd>
-    
 
     
 
 
-    
-        <h4 class="subsection-title">Codepen: </h4>
-        
-
-        
-        <div class="description ko"><a href="http://codepen.io/collection/ArxyLK">전체 데모 보기</a></div>
-        <div class="description en"><a href="http://codepen.io/collection/ArxyLK">Demo Collection</a></div>
-        
-
-        
-        <div class="description ko">플리킹 UI 기본 예제</div>
-        <div class="description en">Flicking UI default example</div>
-        <p data-height="403" data-theme-id="0" data-slug-hash="rVOpPK" data-default-tab="result" data-user="egjs" class='codepen'>See the Pen <a href='http://codepen.io/egjs/pen/rVOpPK/'>eg.Flicking</a> by egjs (<a href='http://codepen.io/egjs'>@egjs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>            <script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
-         <!-- if codepen.id -->
-         <!-- toCodepenEmbedHtml 상단 -->
     <!-- if data.codepen -->
 </dl>
 
@@ -953,7 +935,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1343">line 1343</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1317">line 1317</a>
         </div>
         
     </div>
@@ -1032,7 +1014,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1332">line 1332</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1306">line 1306</a>
         </div>
         
     </div>
@@ -1149,7 +1131,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1321">line 1321</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1295">line 1295</a>
         </div>
         
     </div>
@@ -1266,7 +1248,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1021">line 1021</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line995">line 995</a>
         </div>
         
     </div>
@@ -1383,7 +1365,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line988">line 988</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line962">line 962</a>
         </div>
         
     </div>
@@ -1500,7 +1482,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line977">line 977</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line951">line 951</a>
         </div>
         
     </div>
@@ -1660,7 +1642,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1000">line 1000</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line974">line 974</a>
         </div>
         
     </div>
@@ -1782,7 +1764,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1010">line 1010</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line984">line 984</a>
         </div>
         
     </div>
@@ -1947,7 +1929,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1031">line 1031</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1005">line 1005</a>
         </div>
         
     </div>
@@ -2069,7 +2051,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1041">line 1041</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1015">line 1015</a>
         </div>
         
     </div>
@@ -2234,7 +2216,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1052">line 1052</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1026">line 1026</a>
         </div>
         
     </div>
@@ -2388,6 +2370,167 @@
         
             
 <dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="hasOn">
+            
+                <span class="inherited"><a href="eg.Component.html#hasOn">inherited</a></span>
+            
+            hasOn<span class="signature">(eventName)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Boolean}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="node_modules_@egjs_component_src_component.js.html">component.js</a>, <a href="node_modules_@egjs_component_src_component.js.html#line170">line 170</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+	<div class="description en">
+		<p>Checks whether an event has been attached to a component.</p>
+	</div>
+	
+	
+	<div class="description ko">
+		<p>컴포넌트에 이벤트가 등록됐는지 확인한다.</p>
+	</div>
+	
+
+    
+    
+    
+    
+    
+        
+
+<ul class="parameters">
+    
+    <li>
+        <!-- parameter name -->
+        <div>
+            <strong>eventName</strong>
+            
+
+            
+        </div>
+        <!-- parameter type -->
+        
+        <div>Type: 
+<span class="param-type">String</span>
+
+</div>
+        
+    
+        <!-- Description -->
+        <div>
+            
+            <div class="description en"><p>The name of the event to be attached </p></div>
+            <div class="description ko"><p>등록 여부를 확인할 이벤트의 이름</p></div>
+            
+        </div>
+
+        <!-- Sub parameters -->
+        
+    </li>
+    
+</ul>
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    	
+                        Boolean
+                        
+                        
+                    
+            </td>
+            <td class="description last">
+                
+                <div class="en">Indicates whether the event is attached. </div>
+                <div class="ko"><p>이벤트 등록 여부</p></div>
+                
+
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+        <h5>Example</h5>
+        
+
+    
+    <pre class="prettyprint"><code><p>class Some extends eg.Component {<br>  some() {<br>    this.hasOn(&quot;hi&quot;);// check hi event.<br>  }<br>}</p></code></pre>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    <!-- if data.codepen -->
+</dl>
+
+</dd>
+
+        
+            
+<dt>
     <div class="nameContainer">
         <h4 class="name" id="isPlaying">
             
@@ -2396,7 +2539,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1064">line 1064</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1038">line 1038</a>
         </div>
         
     </div>
@@ -2513,7 +2656,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1138">line 1138</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1112">line 1112</a>
         </div>
         
     </div>
@@ -2706,7 +2849,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1116">line 1116</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1090">line 1090</a>
         </div>
         
     </div>
@@ -2858,6 +3001,782 @@
         
             
 <dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="off">
+            
+                <span class="inherited"><a href="eg.Component.html#off">inherited</a></span>
+            
+            off<span class="signature">(eventName, handlerToDetach)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{eg.Component}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="node_modules_@egjs_component_src_component.js.html">component.js</a>, <a href="node_modules_@egjs_component_src_component.js.html#line230">line 230</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+	<div class="description en">
+		<p>Detaches an event from the component.</p>
+	</div>
+	
+	
+	<div class="description ko">
+		<p>컴포넌트에 등록된 이벤트를 해제한다</p>
+	</div>
+	
+
+    
+    
+    
+    
+    
+        
+
+<ul class="parameters">
+    
+    <li>
+        <!-- parameter name -->
+        <div>
+            <strong>eventName</strong>
+            
+
+            
+        </div>
+        <!-- parameter type -->
+        
+        <div>Type: 
+<span class="param-type">eventName</span>
+
+</div>
+        
+    
+        <!-- Description -->
+        <div>
+            
+            <div class="description en"><p>The name of the event to be detached </p></div>
+            <div class="description ko"><p>해제할 이벤트의 이름</p></div>
+            
+        </div>
+
+        <!-- Sub parameters -->
+        
+    </li>
+    
+    <li>
+        <!-- parameter name -->
+        <div>
+            <strong>handlerToDetach</strong>
+            
+
+            
+        </div>
+        <!-- parameter type -->
+        
+        <div>Type: 
+<span class="param-type">function</span>
+
+</div>
+        
+    
+        <!-- Description -->
+        <div>
+            
+            <div class="description en"><p>The handler function of the event to be detached </p></div>
+            <div class="description ko"><p>해제할 이벤트의 핸들러 함수</p></div>
+            
+        </div>
+
+        <!-- Sub parameters -->
+        
+    </li>
+    
+</ul>
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    	
+                    	eg.Component
+                    	
+                        
+                    
+            </td>
+            <td class="description last">
+                
+                <div class="en">An instance of a component itself </div>
+                <div class="ko"><p>컴포넌트 자신의 인스턴스</p></div>
+                
+
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+        <h5>Example</h5>
+        
+
+    
+    <pre class="prettyprint"><code><p>class Some extends eg.Component {<br>  hi() {<br>    console.log(&quot;hi&quot;);<br>  }<br>  some() {<br>    this.off(&quot;hi&quot;,this.hi); //detach event<br>  }<br>}</p></code></pre>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    <!-- if data.codepen -->
+</dl>
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="on">
+            
+                <span class="inherited"><a href="eg.Component.html#on">inherited</a></span>
+            
+            on<span class="signature">(eventName, handlerToAttach)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{eg.Component}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="node_modules_@egjs_component_src_component.js.html">component.js</a>, <a href="node_modules_@egjs_component_src_component.js.html#line190">line 190</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+	<div class="description en">
+		<p>Attaches an event to a component.</p>
+	</div>
+	
+	
+	<div class="description ko">
+		<p>컴포넌트에 이벤트를 등록한다.</p>
+	</div>
+	
+
+    
+    
+    
+    
+    
+        
+
+<ul class="parameters">
+    
+    <li>
+        <!-- parameter name -->
+        <div>
+            <strong>eventName</strong>
+            
+
+            
+        </div>
+        <!-- parameter type -->
+        
+        <div>Type: 
+<span class="param-type">eventName</span>
+
+</div>
+        
+    
+        <!-- Description -->
+        <div>
+            
+            <div class="description en"><p>The name of the event to be attached </p></div>
+            <div class="description ko"><p>등록할 이벤트의 이름</p></div>
+            
+        </div>
+
+        <!-- Sub parameters -->
+        
+    </li>
+    
+    <li>
+        <!-- parameter name -->
+        <div>
+            <strong>handlerToAttach</strong>
+            
+
+            
+        </div>
+        <!-- parameter type -->
+        
+        <div>Type: 
+<span class="param-type">function</span>
+
+</div>
+        
+    
+        <!-- Description -->
+        <div>
+            
+            <div class="description en"><p>The handler function of the event to be attached </p></div>
+            <div class="description ko"><p>등록할 이벤트의 핸들러 함수</p></div>
+            
+        </div>
+
+        <!-- Sub parameters -->
+        
+    </li>
+    
+</ul>
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    	
+                    	eg.Component
+                    	
+                        
+                    
+            </td>
+            <td class="description last">
+                
+                <div class="en">An instance of a component itself</div>
+                <div class="ko"><p>컴포넌트 자신의 인스턴스</p></div>
+                
+
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+        <h5>Example</h5>
+        
+
+    
+    <pre class="prettyprint"><code><p>class Some extends eg.Component {<br>  hi() {<br>    console.log(&quot;hi&quot;);<br>  }<br>  some() {<br>    this.on(&quot;hi&quot;,this.hi); //attach event<br>  }<br>}</p></code></pre>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    <!-- if data.codepen -->
+</dl>
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="once">
+            
+                <span class="inherited"><a href="eg.Component.html#once">inherited</a></span>
+            
+            once<span class="signature">(eventName, handlerToAttach)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{eg.Component}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="node_modules_@egjs_component_src_component.js.html">component.js</a>, <a href="node_modules_@egjs_component_src_component.js.html#line135">line 135</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+	<div class="description en">
+		<p>Executed event just one time.</p>
+	</div>
+	
+	
+	<div class="description ko">
+		<p>이벤트가 한번만 실행된다.</p>
+	</div>
+	
+
+    
+    
+    
+    
+    
+        
+
+<ul class="parameters">
+    
+    <li>
+        <!-- parameter name -->
+        <div>
+            <strong>eventName</strong>
+            
+
+            
+        </div>
+        <!-- parameter type -->
+        
+        <div>Type: 
+<span class="param-type">eventName</span>
+
+</div>
+        
+    
+        <!-- Description -->
+        <div>
+            
+            <div class="description en"><p>The name of the event to be attached </p></div>
+            <div class="description ko"><p>등록할 이벤트의 이름</p></div>
+            
+        </div>
+
+        <!-- Sub parameters -->
+        
+    </li>
+    
+    <li>
+        <!-- parameter name -->
+        <div>
+            <strong>handlerToAttach</strong>
+            
+
+            
+        </div>
+        <!-- parameter type -->
+        
+        <div>Type: 
+<span class="param-type">function</span>
+
+</div>
+        
+    
+        <!-- Description -->
+        <div>
+            
+            <div class="description en"><p>The handler function of the event to be attached </p></div>
+            <div class="description ko"><p>등록할 이벤트의 핸들러 함수</p></div>
+            
+        </div>
+
+        <!-- Sub parameters -->
+        
+    </li>
+    
+</ul>
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    	
+                    	eg.Component
+                    	
+                        
+                    
+            </td>
+            <td class="description last">
+                
+                <div class="en">An instance of a component itself</div>
+                <div class="ko"><p>컴포넌트 자신의 인스턴스</p></div>
+                
+
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+        <h5>Example</h5>
+        
+
+    
+    <pre class="prettyprint"><code><p>class Some extends eg.Component {<br>  hi() {<br>    alert(&quot;hi&quot;);<br>  }<br>  thing() {<br>    this.once(&quot;hi&quot;, this.hi);<br>  }<br>}</p>
+<p>var some = new Some();<br>some.thing();<br>some.trigger(&quot;hi&quot;);<br>// fire alert(&quot;hi&quot;);<br>some.trigger(&quot;hi&quot;);<br>// Nothing happens</p></code></pre>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    <!-- if data.codepen -->
+</dl>
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="option">
+            
+                <span class="inherited"><a href="eg.Component.html#option">inherited</a></span>
+            
+            option<span class="signature">(key, <span class="optional">value</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{eg.Component|Object}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="node_modules_@egjs_component_src_component.js.html">component.js</a>, <a href="node_modules_@egjs_component_src_component.js.html#line44">line 44</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+	<div class="description en">
+		<p>Sets options in a component or returns them.</p>
+	</div>
+	
+	
+	<div class="description ko">
+		<p>컴포넌트에 옵션을 설정하거나 옵션을 반환한다</p>
+	</div>
+	
+
+    
+    
+    
+    
+    
+        
+
+<ul class="parameters">
+    
+    <li>
+        <!-- parameter name -->
+        <div>
+            <strong>key</strong>
+            
+
+            
+                
+                
+                    
+                
+            
+        </div>
+        <!-- parameter type -->
+        
+        <div>Type: 
+<span class="param-type">String</span>
+
+</div>
+        
+    
+        <!-- Description -->
+        <div>
+            
+            <div class="description en"><p>The key of the option</p></div>
+            <div class="description ko"><p>옵션의 키</p></div>
+            
+        </div>
+
+        <!-- Sub parameters -->
+        
+    </li>
+    
+    <li>
+        <!-- parameter name -->
+        <div>
+            <strong>value</strong>
+            
+
+            
+                
+                    <span class="optional">optional</span>
+                
+                
+                    
+                
+            
+        </div>
+        <!-- parameter type -->
+        
+        <div>Type: 
+<span class="param-type">Object</span>
+
+</div>
+        
+    
+        <!-- Description -->
+        <div>
+            
+            <div class="description en"><p>The option value that corresponds to a given key </p></div>
+            <div class="description ko"><p>키에 해당하는 옵션값</p></div>
+            
+        </div>
+
+        <!-- Sub parameters -->
+        
+    </li>
+    
+</ul>
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    	
+                    	eg.Component
+                    	
+                         | 
+                    
+                    	
+                        Object
+                        
+                        
+                    
+            </td>
+            <td class="description last">
+                
+                <div class="en">An instance, an option value, or an option object of a component itself.<br>- If both key and value are used to set an option, it returns an instance of a component itself.<br>- If only a key is specified for the parameter, it returns the option value corresponding to a given key.<br>- If nothing is specified, it returns an option object. </div>
+                <div class="ko"><p>컴포넌트 자신의 인스턴스나 옵션값, 옵션 객체.<br>- 키와 값으로 옵션을 설정하면 컴포넌트 자신의 인스턴스를 반환한다.<br>- 파라미터에 키만 설정하면 키에 해당하는 옵션값을 반환한다.<br>- 파라미터에 아무것도 설정하지 않으면 옵션 객체를 반환한다.</p></div>
+                
+
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+        <h5>Example</h5>
+        
+
+    
+    <pre class="prettyprint"><code><p>class Some extends eg.Component {<br>}</p>
+<p>const some = new Some({<br>  &quot;foo&quot;: 1,<br>  &quot;bar&quot;: 2<br>});</p>
+<p>some.option(&quot;foo&quot;); // return 1<br>some.option(&quot;foo&quot;,3); // return some instance<br>some.option(); // return options object.<br>some.option({<br>  &quot;foo&quot; : 10,<br>  &quot;bar&quot; : 20,<br>  &quot;baz&quot; : 30<br>}); // return some instance.</p></code></pre>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    <!-- if data.codepen -->
+</dl>
+
+</dd>
+
+        
+            
+<dt>
     <div class="nameContainer">
         <h4 class="name" id="prev">
             
@@ -2866,7 +3785,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1127">line 1127</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1101">line 1101</a>
         </div>
         
     </div>
@@ -3026,7 +3945,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1209">line 1209</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1183">line 1183</a>
         </div>
         
     </div>
@@ -3157,7 +4076,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line1273">line 1273</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line1247">line 1247</a>
         </div>
         
     </div>
@@ -3314,6 +4233,195 @@
 
 </dd>
 
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="trigger">
+            
+                <span class="inherited"><a href="eg.Component.html#trigger">inherited</a></span>
+            
+            trigger<span class="signature">(eventName, customEvent)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Boolean}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="node_modules_@egjs_component_src_component.js.html">component.js</a>, <a href="node_modules_@egjs_component_src_component.js.html#line82">line 82</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+	<div class="description en">
+		<p>Triggers a custom event.</p>
+	</div>
+	
+	
+	<div class="description ko">
+		<p>커스텀 이벤트를 발생시킨다</p>
+	</div>
+	
+
+    
+    
+    
+    
+    
+        
+
+<ul class="parameters">
+    
+    <li>
+        <!-- parameter name -->
+        <div>
+            <strong>eventName</strong>
+            
+
+            
+        </div>
+        <!-- parameter type -->
+        
+        <div>Type: 
+<span class="param-type">String</span>
+
+</div>
+        
+    
+        <!-- Description -->
+        <div>
+            
+            <div class="description en"><p>The name of the custom event to be triggered </p></div>
+            <div class="description ko"><p>발생할 커스텀 이벤트의 이름</p></div>
+            
+        </div>
+
+        <!-- Sub parameters -->
+        
+    </li>
+    
+    <li>
+        <!-- parameter name -->
+        <div>
+            <strong>customEvent</strong>
+            
+
+            
+        </div>
+        <!-- parameter type -->
+        
+        <div>Type: 
+<span class="param-type">Object</span>
+
+</div>
+        
+    
+        <!-- Description -->
+        <div>
+            
+            <div class="description en"><p>Event data to be sent when triggering a custom event </p></div>
+            <div class="description ko"><p>커스텀 이벤트가 발생할 때 전달할 데이터</p></div>
+            
+        </div>
+
+        <!-- Sub parameters -->
+        
+    </li>
+    
+</ul>
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    	
+                        Boolean
+                        
+                        
+                    
+            </td>
+            <td class="description last">
+                
+                <div class="en">Indicates whether the event has occurred. If the stop() method is called by a custom event handler, it will return false and prevent the event from occurring. </div>
+                <div class="ko"><p>이벤트 발생 여부. 커스텀 이벤트 핸들러에서 stop() 메서드를 호출하면 'false'를 반환하고 이벤트 발생을 중단한다.</p></div>
+                
+
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+        <h5>Example</h5>
+        
+
+    
+    <pre class="prettyprint"><code><p>class Some extends eg.Component {<br>  some(){<br>    this.trigger(&quot;hi&quot;);// fire hi event.<br>  }<br>}</p></code></pre>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    <!-- if data.codepen -->
+</dl>
+
+</dd>
+
         </dl>
     
 
@@ -3333,7 +4441,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line722">line 722</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line696">line 696</a>
         </div>
         
     </div>
@@ -3744,7 +4852,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line662">line 662</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line636">line 636</a>
         </div>
         
     </div>
@@ -4155,7 +5263,7 @@
     
         
         <div class="tag-source">
-            <a href="eventHandler.js.html">eventHandler.js</a>, <a href="eventHandler.js.html#line37">line 37</a>
+            <a href="src_eventHandler.js.html">eventHandler.js</a>, <a href="src_eventHandler.js.html#line37">line 37</a>
         </div>
         
     </div>
@@ -4532,7 +5640,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line755">line 755</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line729">line 729</a>
         </div>
         
     </div>
@@ -4763,7 +5871,7 @@
     
         
         <div class="tag-source">
-            <a href="Flicking.js.html">Flicking.js</a>, <a href="Flicking.js.html#line696">line 696</a>
+            <a href="src_Flicking.js.html">Flicking.js</a>, <a href="src_Flicking.js.html#line670">line 670</a>
         </div>
         
     </div>
@@ -5004,7 +6112,7 @@
         
 
         <footer>
-            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Fri Jun 23 2017 14:32:33 GMT+0900 (KST)
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Fri Jun 23 2017 14:44:49 GMT+0900 (KST)
         </footer>
     </div>
 </div>
